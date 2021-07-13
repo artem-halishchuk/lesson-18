@@ -137,11 +137,44 @@
 }
 .team-foto {
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    height: calc(438px);
-    max-width: 1440px;
-    //background-image: url('../../images/team-all.jpg');
-    background-size: 100vw 100%;
+    height: 400px;
+    background-image: 
+    linear-gradient(264.71deg, #F01432 0%, #323264 29.69%),
+    url('../../images/team-all.jpg');
+    background-size: cover;
+    background-position: 50% 30%;
     background-repeat: no-repeat;
+    background-blend-mode: screen, normal;
+    & {
+      @media (max-width: 768px) {
+        height: 290px;
+      }
+          
+    }
+  .team-foto__text {
+    font-size: 9.6rem;
+    font-weight: 700;
+    line-height: calc(113 / 96);
+    letter-spacing: 63px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.8;
+    text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+    text-align: center;
+      & {
+        @media (max-width: 1000px) {
+          letter-spacing: 33px;
+        }
+        @media (max-width: 768px) {
+          font-size: 2.0rem;
+          font-weight: 700;
+          line-height: calc(42 / 20);
+          letter-spacing: 13px;
+        }
+      }
+  }
 }
