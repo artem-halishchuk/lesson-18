@@ -1,0 +1,147 @@
+.header-about {
+  .logo__link-main {
+    background-image: url('../../images/logo-on-white.svg');
+  }
+  .logo__link {
+    color: var(--color-main-900);
+  }
+  .contacts-header__link {
+    color: var(--color-text);
+  }
+  .header__list-item {
+    color: var(--color-active-regular);
+  }
+  .header__list-item:nth-child(1) {
+    border-bottom-color: red;
+    color: var(--color-accent);
+    &:hover {
+      border-bottom-color: transparent;
+    }
+  }
+  .header__list-item:hover {
+    border-bottom-color: transparent;
+  }
+    .menu-open-nav {
+        .menu-open-nav-decor {
+                background-color: var(--color-main-900);
+            }
+        &:active {
+            .menu-open-nav-decor {
+            background-color: var(--color-text-for-dark);
+            }
+        }
+
+
+    }
+}
+.about-services-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  padding-right: 112px;
+  padding-left: 112px;
+  & {
+    @media (max-width: 768px) {
+        flex-direction: column;
+        padding: 0;
+        margin-top: 30px;
+        margin-bottom: 34px;
+    }
+  }
+}
+.about-services {
+  display: flex;
+  flex-direction: column;
+  max-width: 641px;
+}
+.about-services__heading {
+  @include heading;
+}
+.about-services__description {
+  @include text;
+  margin-top: 20px;
+}
+.achievements {
+  width: 100%;
+  margin-left: 40px;
+  & {
+    @media (max-width: 768px) {
+        margin-left: 0;
+        
+    }
+  }
+}
+.achievements__list {
+  & {
+    @media (max-width: 768px) {
+        margin-top: 20px;
+    }
+  }   
+}
+.achievements__item {
+  padding-bottom: 40px;
+  padding-left: 16px;
+  border-left: 4px solid var(--color-switcher-background);
+  & {
+    @media (max-width: 768px) {
+        border: none;
+        
+        padding-bottom: 20px;
+        padding-left: 0;
+    }
+  }
+  &:last-child {
+    padding-bottom: 0;
+  }
+  .about-services__value-wrap {
+    margin-bottom: 5px;
+    background-repeat: no-repeat;
+    //background-image: url('../../images/achievements/flag.svg');
+    background-position: left center;
+    background-size: 25px auto;
+    .about-services__value {
+      padding-left: 35px;
+      background-clip: text;
+      background-image: var(--gradient-red-text);
+      font-size: 3.6rem;
+      font-weight: 700;
+      line-height: calc(42 / 36);
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  &:nth-child(1) {
+    @media (max-width: 768px) {
+        border-top: 4px solid var(--color-switcher-background);
+        padding-top: 15px;
+     }
+    .about-services__value-wrap {
+      background-image: url('../../images/achievements/flag.svg');
+    }
+  }
+  &:nth-child(2) {
+    .about-services__value-wrap {
+      background-image: url('../../images/achievements/case.svg');
+    }
+  }
+  &:nth-child(3) {
+    .about-services__value-wrap {
+      background-image: url('../../images/achievements/star.svg');
+    }
+  }
+}
+.achievements__description {
+  @include font-h4;
+  color: var(--color-main-900);
+}
+.team-foto {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: calc(438px);
+    max-width: 1440px;
+    //background-image: url('../../images/team-all.jpg');
+    background-size: 100vw 100%;
+    background-repeat: no-repeat;
+}
