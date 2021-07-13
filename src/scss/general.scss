@@ -41,10 +41,15 @@
 
   --border-radius: 12px;
   --display-size-plus: 50px;
+
+  // --display-size-1: 1320px;
+  // --display-size-2: 1000px;
+  // --display-size-3: 768px;
+  // --display-size-4: 320px;
   --display-size-1: 1320px;
-  --display-size-2: 1000px;
-  --display-size-3: 764px;
-  --display-size-4: 320px;
+  --display-size-2: 904px;
+  --display-size-3: 688px;
+  --display-size-4: 335px;
 }
 html {
   color: black;
@@ -60,17 +65,37 @@ body {
   padding: 0;
 }
 
+// @media (min-width: 1440px) {
+//   .container {
+//     width: var(--display-size-1);
+//   }
+// }
+// @media (max-width: 1340px) {
+//   .container {
+//     width: var(--display-size-2);
+//   }
+// }
+// @media (max-width: 1020px) {
+//   .container {
+//     width: var(--display-size-3);
+//   }
+// }
+// @media (max-width: 788px) {
+//   .container {
+//     width: var(--display-size-4);
+//   }
+// }
 @media (min-width: 1440px) {
   .container {
     width: var(--display-size-1);
   }
 }
-@media (max-width: 1340px) {
+@media (max-width: 1024px) {
   .container {
     width: var(--display-size-2);
   }
 }
-@media (max-width: 1020px) {
+@media (max-width: 768px) {
   .container {
     width: var(--display-size-3);
   }
