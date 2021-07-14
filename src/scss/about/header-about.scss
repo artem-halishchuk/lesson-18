@@ -5,6 +5,9 @@
   .logo__link {
     color: var(--color-main-900);
   }
+  .contacts-header__cicle {
+    background-color: var(--color-switcher-background);
+  }
   .contacts-header__link {
     color: var(--color-text);
   }
@@ -30,8 +33,6 @@
             background-color: var(--color-text-for-dark);
             }
         }
-
-
     }
 }
 .about-services-wrap {
@@ -43,6 +44,10 @@
   padding-right: 112px;
   padding-left: 112px;
   & {
+    @media (max-width: 1024px) {
+      padding-right: 66px;
+      padding-left: 66px;
+    }
     @media (max-width: 768px) {
         flex-direction: column;
         padding: 0;
@@ -56,9 +61,9 @@
   flex-direction: column;
   max-width: 641px;
 }
-.about-services__heading {
-  @include heading;
-}
+// .about-services__heading {
+//   @include heading;
+// }
 .about-services__description {
   @include text;
   margin-top: 20px;
@@ -166,7 +171,7 @@
     text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
     text-align: center;
       & {
-        @media (max-width: 1000px) {
+        @media (max-width: 1024px) {
           letter-spacing: 33px;
         }
         @media (max-width: 768px) {
