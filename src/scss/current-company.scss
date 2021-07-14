@@ -15,7 +15,7 @@
     justify-items: end;
   }
   .current-company__item {
-    width: calc((100vw - 17px) / 4);
+    width: calc((100vw - 0px) / 4);
     height: calc(360px / 3);
     .current-company__link {
       display: block;
@@ -141,7 +141,7 @@
       //justify-items: end;
     }
     .current-company__item {
-      width: calc((100vw - 17px) / 2);
+      width: calc((100vw - 0px) / 2);
       height: 90px;
       //   display: flex;
       //   align-items: center;
