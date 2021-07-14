@@ -47,6 +47,7 @@
     @media (max-width: 1024px) {
       padding-right: 66px;
       padding-left: 66px;
+      margin-bottom: 50px;
     }
     @media (max-width: 768px) {
       flex-direction: column;
@@ -61,9 +62,13 @@
   flex-direction: column;
   max-width: 641px;
 }
-// .about-services__heading {
-//   @include heading;
-// }
+.about-services__heading {
+  @include heading;
+  @media (max-width: 768px) {
+    @include font-h2;
+    font-weight: 700;
+  }
+}
 .about-services__description {
   @include text;
   margin-top: 20px;
@@ -177,5 +182,115 @@
         line-height: calc(42 / 20);
       }
     }
+  }
+}
+
+.about-quality {
+  display: flex;
+  padding-right: 112px;
+  padding-left: 112px;
+  margin-top: 80px;
+  @media (max-width: 1024px){
+    padding-right: 66px;
+    padding-left: 66px;
+    margin-top: 40px;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin-top: 20px;
+
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .about-services__heading {
+    order: 2;
+    @media (max-width: 768px) {
+      margin-top: 20px;
+    }
+  }
+  .about-services__description-wrap {
+    max-width: 641px;
+    order: 1;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media (max-width: 768px) {
+      margin-right: 0;
+    }
+    .about-services__description {
+      margin-top: 0; 
+    }
+  }
+
+}
+
+
+.awards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 93px;
+  background-color: var(--color-content-background);
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  @media (max-width: 1024px) {
+    margin-top: 60px;
+  }
+  @media (max-width: 768px) {
+    margin-top: 40px;
+  }
+  .awards__heading {
+    @include font-h3caps;
+    margin-top: 28px;
+  }
+  .awards__list {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    @media (max-width: 1024px) {
+      gap: 20px;
+    }
+    .awards__item {
+      width: 100%;
+      height: 110px;
+      background-color: var(--color-text-for-dark);
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: auto 50%, 100%;
+      @media (max-width: 1024px) {
+        height: 90px;
+      }
+    }
+
+    .awards__item:nth-child(1) {
+      background-image: url('../../images/awards/legal-500.jpg');
+    }
+    .awards__item:nth-child(2) {
+      background-image: url('../../images/awards/award-year.jpg');
+    }
+    .awards__item:nth-child(3) {
+      background-image: url('../../images/awards/market-leaders.jpg');
+    }
+    .awards__item:nth-child(4) {
+      background-image: url('../../images/awards/ulf-2017.jpg');
+    }
+    @media (max-width: 768px) {
+      .awards__item:nth-last-child(-n+2) {
+        display: none;
+      }
+    }
+  }
+  .listing {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}
+.listing__item:nth-last-child(-n+3) {
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
   }
 }

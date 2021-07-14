@@ -76,7 +76,7 @@ body {
     width: 688px;
   }
   @media (max-width: 768px) {
-    width: 335px;
+    width: 334px;
   }
 }
 
@@ -157,13 +157,13 @@ body {
   background: var(--gradient-red-text);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  @media (max-width: 788px) {
-    @include font-h1;
+  @media (max-width: 768px) {
+    @include font-h2;
   }
 }
 @mixin text {
   @include font-articl-big;
-  @media (max-width: 788px) {
+  @media (max-width: 768px) {
     @include font-articl;
   }
 }
