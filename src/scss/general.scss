@@ -57,56 +57,36 @@ html {
   font-size: 10px;
 }
 body {
-  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: rgb(255, 255, 255);
   main {
     flex-grow: 1;
   }
   footer {
     flex-grow: 0;
-}
+  }
 }
 .container {
   width: 1320px;
   margin: 0;
-  padding: 0;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
+  padding: 0;
   @media (min-width: 1440px) {
-      width: 1320px;
+    width: 1320px;
   }
   @media (max-width: 1440px) {
-      width: 904px;
-  } 
+    width: 904px;
+  }
   @media (max-width: 1024px) {
-      width: 688px;
+    width: 688px;
   }
   @media (max-width: 768px) {
-      width: 335px;
+    width: 335px;
   }
 }
-// @media (min-width: 1440px) {
-//   .container {
-//     width: var(--display-size-1);
-//   }
-// }
-// @media (max-width: 1024px) {
-//   .container {
-//     width: var(--display-size-2);
-//   }
-// }
-// @media (max-width: 768px) {
-//   .container {
-//     width: var(--display-size-3);
-//   }
-// }
-// @media (max-width: 788px) {
-//   .container {
-//     width: var(--display-size-4);
-//   }
-// }
 
 @mixin font-h1 {
   font-size: 4.2rem;
@@ -195,40 +175,6 @@ body {
     @include font-articl;
   }
 }
-@mixin language-switcher-mixin {
-  .lng {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-text);
-    input[type='radio'] {
-      width: 0;
-      margin: 0;
-      opacity: 0;
-    }
-    label {
-      padding: 5px 6px;
-      border-radius: 8px;
-      font-size: 1.2rem;
-      font-weight: 700;
-      line-height: 1.1;
-      text-transform: uppercase;
-      &:focus-within {
-        border: 1px solid black;
-      }
-    }
-    label:hover {
-      background-color: var(--color-content-activ);
-    }
-    input[type='radio']:focus + label {
-      color: var(--color-text);
-    }
-    input[type='radio']:checked + label {
-      background-color: var(--color-accent);
-      color: var(--color-text-for-dark);
-    }
-  }
-}
 @mixin listing {
   .listing {
     display: flex;
@@ -277,14 +223,3 @@ body {
     }
   }
 }
-@mixin contacts-cicle {
-  width: 6px;
-  height: 6px;
-  margin: 0 10px;
-  border-radius: 50%;
-}
-
-
-
-
-//@include header;

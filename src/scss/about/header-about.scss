@@ -24,21 +24,21 @@
   .header__list-item:hover {
     border-bottom-color: transparent;
   }
-    .menu-open-nav {
-        .menu-open-nav-decor {
-                background-color: var(--color-main-900);
-            }
-        &:active {
-            .menu-open-nav-decor {
-            background-color: var(--color-text-for-dark);
-            }
-        }
+  .menu-open-nav {
+    .menu-open-nav-decor {
+      background-color: var(--color-main-900);
     }
+    &:active {
+      .menu-open-nav-decor {
+        background-color: var(--color-text-for-dark);
+      }
+    }
+  }
 }
 .about-services-wrap {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
+  justify-content: space-between;
   margin-top: 80px;
   margin-bottom: 100px;
   padding-right: 112px;
@@ -49,10 +49,10 @@
       padding-left: 66px;
     }
     @media (max-width: 768px) {
-        flex-direction: column;
-        padding: 0;
-        margin-top: 30px;
-        margin-bottom: 34px;
+      flex-direction: column;
+      margin-top: 30px;
+      margin-bottom: 34px;
+      padding: 0;
     }
   }
 }
@@ -73,17 +73,16 @@
   margin-left: 40px;
   & {
     @media (max-width: 768px) {
-        margin-left: 0;
-        
+      margin-left: 0;
     }
   }
 }
 .achievements__list {
   & {
     @media (max-width: 768px) {
-        margin-top: 20px;
+      margin-top: 20px;
     }
-  }   
+  }
 }
 .achievements__item {
   padding-bottom: 40px;
@@ -91,10 +90,9 @@
   border-left: 4px solid var(--color-switcher-background);
   & {
     @media (max-width: 768px) {
-        border: none;
-        
-        padding-bottom: 20px;
-        padding-left: 0;
+      padding-bottom: 20px;
+      padding-left: 0;
+      border: none;
     }
   }
   &:last-child {
@@ -118,9 +116,9 @@
   }
   &:nth-child(1) {
     @media (max-width: 768px) {
-        border-top: 4px solid var(--color-switcher-background);
-        padding-top: 15px;
-     }
+      padding-top: 15px;
+      border-top: 4px solid var(--color-switcher-background);
+    }
     .about-services__value-wrap {
       background-image: url('../../images/achievements/flag.svg');
     }
@@ -141,45 +139,43 @@
   color: var(--color-main-900);
 }
 .team-foto {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    height: 400px;
-    background-image: 
-    linear-gradient(264.71deg, #F01432 0%, #323264 29.69%),
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(264.71deg, #f01432 0%, #323264 29.69%),
     url('../../images/team-all.jpg');
-    background-size: cover;
-    background-position: 50% 30%;
-    background-repeat: no-repeat;
-    background-blend-mode: screen, normal;
-    & {
-      @media (max-width: 768px) {
-        height: 290px;
-      }
-          
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+  background-size: cover;
+  background-blend-mode: screen, normal;
+  & {
+    @media (max-width: 768px) {
+      height: 290px;
     }
+  }
   .team-foto__text {
+    opacity: 0.8;
+    color: #fff;
     font-size: 9.6rem;
     font-weight: 700;
-    line-height: calc(113 / 96);
     letter-spacing: 63px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    opacity: 0.8;
-    text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+    line-height: calc(113 / 96);
     text-align: center;
-      & {
-        @media (max-width: 1024px) {
-          letter-spacing: 33px;
-        }
-        @media (max-width: 768px) {
-          font-size: 2.0rem;
-          font-weight: 700;
-          line-height: calc(42 / 20);
-          letter-spacing: 13px;
-        }
+    text-shadow: 0 15px 30px rgba(40, 40, 86, 0.8);
+    text-transform: uppercase;
+    & {
+      @media (max-width: 1024px) {
+        letter-spacing: 33px;
       }
+      @media (max-width: 768px) {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 13px;
+        line-height: calc(42 / 20);
+      }
+    }
   }
 }
