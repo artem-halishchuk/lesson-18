@@ -133,21 +133,21 @@
     float: right;
   }
 }
-.case-services-page {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  & {
-    @media (max-width: 768px) {
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-  }
-}
-.news-services-page {
-  & {
-    @media (max-width: 768px) {
-      overflow: hidden;
-      border-radius: var(--border-radius) var(--border-radius) 0 0;
-    }
-  }
-}
+// .case-services-page {
+//   margin-top: 40px;
+//   margin-bottom: 40px;
+//   & {
+//     @media (max-width: 768px) {
+//       margin-top: 20px;
+//       margin-bottom: 20px;
+//     }
+//   }
+// }
+// .news-services-page {
+//   & {
+//     @media (max-width: 768px) {
+//       overflow: hidden;
+//       border-radius: var(--border-radius) var(--border-radius) 0 0;
+//     }
+//   }
+// }

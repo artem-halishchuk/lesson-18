@@ -15,7 +15,7 @@
     color: var(--color-active-regular);
   }
   .header__list-item:nth-child(1) {
-    border-bottom-color: red;
+    border-bottom-color: var(--color-accent);
     color: var(--color-accent);
     &:hover {
       border-bottom-color: transparent;

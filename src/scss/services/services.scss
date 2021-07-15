@@ -33,16 +33,9 @@
     }
   }
 }
+.header-services {
+  .header__list-item:nth-child(2) {
+    border-bottom-color: var(--color-text-for-dark);
+  }
+}
 
-// @media (max-width: 768px) {
-//   .header-hero__nav {
-//     .header__list {
-//       .header__list-item-services-curent {
-//         color: var(--color-accent);
-//         &:hover {
-//           color: var(--color-accent);
-//         }
-//       }
-//     }
-//   }
-// }
