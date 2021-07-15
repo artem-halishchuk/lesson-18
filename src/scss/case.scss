@@ -66,21 +66,17 @@
 }
 
 @media (max-width: 1024px) {
-
-    .case__link-heading {
-      @include font-h4;
-      color: var(--color-main-400);
-    }
-
+  .case__link-heading {
+    @include font-h4;
+    color: var(--color-main-400);
+  }
 }
 @media (max-width: 768px) {
-
-    .case__list {
-      display: flex;
-      flex-direction: column;
-    }
-    .case__item {
-      display: flex;
-    }
-
+  .case__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .case__item {
+    display: flex;
+  }
 }

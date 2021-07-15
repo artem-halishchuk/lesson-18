@@ -11,8 +11,8 @@
   }
   & {
     @media (max-width: 1024px) {
-        grid-template-columns: 330px auto;
-      }
+      grid-template-columns: 330px auto;
+    }
     @media (max-width: 768px) {
       padding-top: 40px;
       .listing {
@@ -85,6 +85,7 @@
     color: var(--color-text-for-dark);
     .advantages-description__heading {
       @include font-h2;
+      font-weight: 500;
       margin-bottom: 20px;
       @media (max-width: 1024px) {
         @include font-h3;
@@ -92,12 +93,14 @@
     }
     .advantages-description__text {
       @include font-h3;
+      font-weight: 300;
       @media (max-width: 1024px) {
         @include font-h4;
       }
     }
   }
 }
+
 @media (max-width: 768px) {
   .advantages {
     display: flex;
