@@ -60,6 +60,8 @@
   grid-template-rows: 1fr auto;
   align-items: end;
   width: calc((100% / 3) - ((2 * 40px) / 3));
+  overflow: hidden;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
   @media (max-width: 1024px) {
     width: calc((100% / 2) - ((1 * 40px) / 2));
   }
@@ -76,6 +78,7 @@
     width: 100%;
     height: auto;
     align-self: start;
+    border-radius: var(--border-radius);
   }
   .all-team__description {
     grid-area: description;
