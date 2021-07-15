@@ -11,9 +11,9 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    width: 100%;
     margin-top: 30px;
     justify-items: end;
-    width: 100%;
   }
   .current-company__item {
     width: 100%;

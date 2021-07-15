@@ -55,29 +55,28 @@
 @include listing;
 
 @media (max-width: 1440px) {
-
-    .team__photo {
-      height: 470px;
-
+  .team__photo {
+    height: 470px;
+  }
+  .team__heading {
+    @include font-h2;
+    font-weight: 700;
   }
 }
 @media (max-width: 1024px) {
-
-    .team__photo {
-      height: 390px;
-    }
-    .team__heading {
-      @include font-h2;
-      font-weight: 700;
-    }
-    .team__description {
-      padding-top: 20px;
-      padding-bottom: 10px;
-    }
-
+  .team__photo {
+    height: 390px;
+  }
+  .team__heading {
+    @include font-h3;
+    font-weight: 700;
+  }
+  .team__description {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
 }
 @media (max-width: 768px) {
-
   .team__photo,
   .team__description > .team__name,
   .team__description > .team__position {
