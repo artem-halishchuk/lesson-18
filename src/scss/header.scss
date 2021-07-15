@@ -95,20 +95,6 @@
       display: flex;
       align-items: center;
       color: var(--color-text-for-dark);
-      .header__list-item {
-        padding-bottom: 2px;
-        border-bottom: 2px solid transparent;
-        & {
-          @media (max-width: 768px) {
-            border-bottom: none;
-            color: none;
-          }
-        }
-      }
-      .header__list-item:hover {
-        border-bottom-color: var(--color-accent);
-        color: var(--color-accent);
-      }
     }
   }
   @media (max-width: 768px) {
@@ -142,14 +128,6 @@
           background-color: var(--color-content-background);
           color: var(--color-active-regular);
           font-weight: 500;
-          &:hover {
-            background-color: var(--color-content-activ);
-            color: var(--color-active-regular);
-          }
-          &:active {
-            background-color: var(--color-content-activ);
-            color: var(--color-active-regular);
-          }
         }
       }
     }
@@ -187,6 +165,7 @@
     }
     justify-items: end;
   }
+  
   .contacts-header {
     grid-area: contacts;
     .contacts-header__list {
@@ -236,7 +215,12 @@
       .header__list-item:hover {
         border-bottom-color: var(--color-accent);
         color: var(--color-accent);
+        @media (max-width: 768px) {
+          background-color: var(--color-switcher-background);
+          color: var(--color-active-regular);
+        }
       }
+
     }
   }
   .menu-open-nav {
@@ -332,3 +316,38 @@
 }
 
 @include header;
+
+.header-white {
+  .header__nav {
+    .header__list {
+      .header__list-item {
+        color: var(--color-active-regular);
+      }
+    }
+  }
+      .logo__link-main {
+        background-image: url('../images/logo-on-white.svg');
+      }
+      .logo__link {
+        color: var(--color-main-900);
+      }
+      .contacts-header__cicle {
+        background-color: var(--color-switcher-background);
+      }
+      .contacts-header__link {
+        color: var(--color-text);
+      }
+      .menu-open-nav {
+        .header__list-item:hover {
+          border-bottom-color: transparent;
+        }
+        .menu-open-nav-decor {
+          background-color: var(--color-main-900);
+        }
+        &:active {
+          .menu-open-nav-decor {
+            background-color: var(--color-text-for-dark);
+          }
+        }
+      }
+    }

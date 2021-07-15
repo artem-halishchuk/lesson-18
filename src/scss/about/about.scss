@@ -1,36 +1,12 @@
 .header-about {
-  .logo__link-main {
-    background-image: url('../../images/logo-on-white.svg');
-  }
-  .logo__link {
-    color: var(--color-main-900);
-  }
-  .contacts-header__cicle {
-    background-color: var(--color-switcher-background);
-  }
-  .contacts-header__link {
-    color: var(--color-text);
-  }
-  .header__list-item {
-    color: var(--color-active-regular);
-  }
-  .header__list-item:nth-child(1) {
-    border-bottom-color: var(--color-accent);
-    color: var(--color-accent);
-    &:hover {
-      border-bottom-color: transparent;
-    }
-  }
-  .header__list-item:hover {
-    border-bottom-color: transparent;
-  }
-  .menu-open-nav {
-    .menu-open-nav-decor {
-      background-color: var(--color-main-900);
-    }
-    &:active {
-      .menu-open-nav-decor {
-        background-color: var(--color-text-for-dark);
+  .header__nav {
+    .header__list {
+      .header__list-item:nth-child(1) {
+        border-bottom-color: var(--color-accent);
+        color: var(--color-accent);
+        &:hover {
+          color: var(--color-accent);
+        }
       }
     }
   }

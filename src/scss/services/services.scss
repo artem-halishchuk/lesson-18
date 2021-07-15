@@ -33,9 +33,19 @@
     }
   }
 }
+// .header-services {
+//   .header__list-item:nth-child(2) {
+//     border-bottom-color: var(--color-text-for-dark);
+//   }
+// }
 .header-services {
   .header__list-item:nth-child(2) {
-    border-bottom-color: var(--color-text-for-dark);
+    border-bottom-color: var(--color-accent);
+    color: var(--color-active-regular);
+    color: var(--color-accent);
+    &:hover {
+      color: var(--color-accent);
+    }
   }
-}
 
+}
