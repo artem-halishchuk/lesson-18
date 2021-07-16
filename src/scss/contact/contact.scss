@@ -122,26 +122,37 @@
     .form-contact__item {
       input,
       textarea {
+        @include font-articl;
+        font-family: 'TTNorms';
+        font-weight: 400;
         width: 100%;
         margin-bottom: 20px;
         border-radius: var(--border-radius);
         resize: none;
         height: 47px;
-        @include font-articl;
         outline: none;
+        border: 0;
+        padding: 10px;
+        overflow-y:hidden;
         &::placeholder {
+          font-family: 'TTNorms';
           @include font-articl;
           color: var(--color-text);
         }
+        &:focus {
+          border: 2px solid var(--color-accent);
+        }
       }
       textarea {
-        height: 180px;
+        min-height: 180px;
       }
     }
   }
 }
 
-
+.button-more-posts {
+  border: 0;
+}
 .map {
    height: 600px;
    width: 100%;
