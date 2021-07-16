@@ -75,9 +75,9 @@
   }
   .all-team__img {
     grid-area: img;
+    align-self: start;
     width: 100%;
     height: auto;
-    align-self: start;
     border-radius: var(--border-radius);
   }
   .all-team__description {

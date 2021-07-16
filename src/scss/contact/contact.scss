@@ -1,4 +1,4 @@
-.header-contact{
+.header-contact {
   .header__nav {
     .header__list {
       .header__list-item:nth-child(5) {
@@ -11,14 +11,14 @@
     }
   }
 }
-.contact  {
+.contact {
   display: flex;
-  padding-right: 113px;
-  padding-left: 113px;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   margin-top: 80px;
   margin-bottom: 80px;
+  padding-right: 113px;
+  padding-left: 113px;
   @media (max-width: 1440px) {
     padding-right: 40px;
     padding-left: 40px;
@@ -27,22 +27,22 @@
     flex-direction: column;
   }
   @media (max-width: 768px) {
-    padding-right: 0;
-    padding-left: 0;
     margin-top: 30px;
     margin-bottom: 40px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 .contacts__list-contact {
   display: flex;
   flex-direction: column;
   width: 412px;
+  color: var(--color-main-900);
+  font-weight: 400;
   @media (max-width: 1440px) {
     width: 312px;
   }
   @include font-articl-big;
-  font-weight: 400;
-  color: var(--color-main-900);
   .contacts__item-contact:first-child {
     margin-bottom: 40px;
     &:after {
@@ -50,8 +50,8 @@
       display: block;
       width: 100%;
       height: 4px;
-      background-color: var(--color-switcher-background);
       margin-top: 20px;
+      background-color: var(--color-switcher-background);
     }
   }
   .contacts__item-contact:nth-child(2) {
@@ -65,35 +65,34 @@
       display: block;
       width: 100%;
       height: 4px;
-      background-color: var(--color-switcher-background);
       margin-top: 40px;
+      background-color: var(--color-switcher-background);
     }
   }
   .contacts__item-contact:last-child {
     .contacts__link-contact {
       display: flex;
       align-items: center;
-      height: 38px;
       width: 180px;
-      font-size: 1.2rem;
-      font-weight: 600;
-      line-height: calc(16 / 12);
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: var(--color-active-regular);
+      height: 38px;
       padding-left: 48px;
       background-image: url('../images/logo-fb-blue.svg');
       background-repeat: no-repeat;
       background-size: 38px 38px;
+      color: var(--color-active-regular);
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      line-height: calc(16 / 12);
+      text-transform: uppercase;
     }
   }
 }
-
 .form-contact {
   max-width: 527px;
+  padding: 20px;
   border-radius: var(--border-radius);
   background-color: var(--color-content-background);
-  padding: 20px;
   @media (max-width: 1024px) {
     margin-top: 40px;
     //width: 100%;
@@ -108,14 +107,14 @@
     .form-contact__heading-main {
       @include heading;
       @include font-h2;
-      font-weight: 700;
       margin-bottom: 20px;
+      font-weight: 700;
     }
     .form-contact__heading-mainor {
       @include font-h3caps;
-      font-weight: 700;
+      margin-bottom: 10px;
       color: var(--color-text);
-      margin-bottom: 10px
+      font-weight: 700;
     }
   }
   .form-contact__listing {
@@ -123,21 +122,21 @@
       input,
       textarea {
         @include font-articl;
+        width: 100%;
+        height: 47px;
+        margin-bottom: 20px;
+        padding: 10px;
+        overflow-y: hidden;
+        border: 0;
+        border-radius: var(--border-radius);
+        outline: none;
         font-family: 'TTNorms';
         font-weight: 400;
-        width: 100%;
-        margin-bottom: 20px;
-        border-radius: var(--border-radius);
         resize: none;
-        height: 47px;
-        outline: none;
-        border: 0;
-        padding: 10px;
-        overflow-y:hidden;
         &::placeholder {
+          color: var(--color-text);
           font-family: 'TTNorms';
           @include font-articl;
-          color: var(--color-text);
         }
         &:focus {
           border: 2px solid var(--color-accent);
@@ -149,15 +148,13 @@
     }
   }
 }
-
 .button-more-posts {
   border: 0;
 }
 .map {
-   height: 600px;
-   width: 100%;
+  width: 100%;
+  height: 600px;
 }
-
 .footer-contact {
   border-radius: 0;
 }
