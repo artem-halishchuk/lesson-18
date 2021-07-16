@@ -85,8 +85,8 @@
     color: var(--color-text-for-dark);
     .advantages-description__heading {
       @include font-h2;
-      font-weight: 500;
       margin-bottom: 20px;
+      font-weight: 500;
       @media (max-width: 1024px) {
         @include font-h3;
       }
