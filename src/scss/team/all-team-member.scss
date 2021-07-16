@@ -82,6 +82,9 @@
     .all-team-member__item {
       display: flex;
       align-items: center;
+      &:first-child {
+        color: var(--color-text);
+      }
       &:nth-child(1n+2):before {
         content: '';
         width: 6px;
