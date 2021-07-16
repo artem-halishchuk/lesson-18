@@ -237,16 +237,16 @@
       }
     }
     .awards__item:nth-child(1) {
-      background-image: url('../../images/awards/legal-500.jpg');
+      background-image: url('../images/awards/legal-500.jpg');
     }
     .awards__item:nth-child(2) {
-      background-image: url('../../images/awards/award-year.jpg');
+      background-image: url('../images/awards/award-year.jpg');
     }
     .awards__item:nth-child(3) {
-      background-image: url('../../images/awards/market-leaders.jpg');
+      background-image: url('../images/awards/market-leaders.jpg');
     }
     .awards__item:nth-child(4) {
-      background-image: url('../../images/awards/ulf-2017.jpg');
+      background-image: url('../images/awards/ulf-2017.jpg');
     }
     @media (max-width: 768px) {
       .awards__item:nth-last-child(-n + 2) {
